@@ -16,5 +16,13 @@ namespace Sistema_de_Ventas
         {
             InitializeComponent();
         }
+
+        private void Btnguardar_Click(object sender, EventArgs e)
+        {
+           Categorias categorias = new Categorias();
+            categorias.codigo = txtCodigo.Text;
+            categorias.descricion = txtDescripcion.Text;
+
+        }
     }
 }
