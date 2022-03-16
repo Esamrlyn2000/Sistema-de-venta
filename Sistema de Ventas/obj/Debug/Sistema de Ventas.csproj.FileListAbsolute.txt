@@ -1,0 +1,15 @@
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\bin\Debug\Sistema de Ventas.exe.config
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\bin\Debug\Sistema de Ventas.exe
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\bin\Debug\Sistema de Ventas.pdb
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema de Ventas.csproj.AssemblyReference.cache
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema de Ventas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema_de_Ventas.Frmloging.resources
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema_de_Ventas.Properties.Resources.resources
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema de Ventas.csproj.GenerateResource.cache
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema de Ventas.csproj.CoreCompileInputs.cache
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema de Ventas.exe
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema de Ventas.pdb
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema_de_Ventas.Form1.resources
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema_de_Ventas.formarticulos.resources
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema_de_Ventas.FormCrearArticulo.resources
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema_de_Ventas.frmcategoria.resources
