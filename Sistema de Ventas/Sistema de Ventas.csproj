@@ -81,6 +81,12 @@
       <DependentUpon>Frmloging.cs</DependentUpon>
     </Compile>
     <Compile Include="Funciones.cs" />
+    <Compile Include="Mantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Designer.cs">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -128,6 +135,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\contabilidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\ventas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\mantenimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\searchpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\exit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

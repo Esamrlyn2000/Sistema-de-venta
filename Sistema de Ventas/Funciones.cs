@@ -133,7 +133,21 @@ namespace Sistema_de_Ventas
 
         }
 
-        
+        public void cerrarVentana()
+        {
+            if (MessageBox.Show("Deseas Salir ", "Notificacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+
+                Application.Exit();
+            }
+            else
+            {
+
+
+            }
+        }
+
+
 
     }
 }

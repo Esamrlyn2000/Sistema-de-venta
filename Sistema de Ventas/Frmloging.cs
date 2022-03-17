@@ -23,7 +23,7 @@ namespace Sistema_de_Ventas
         {
             Datoslogin dl = new Datoslogin();
 
-            formarticulos frm = new formarticulos();
+            MenuPrincipal frm = new MenuPrincipal();
             
             SqlCommand cmd = new SqlCommand();
             SqlDataReader lector;
