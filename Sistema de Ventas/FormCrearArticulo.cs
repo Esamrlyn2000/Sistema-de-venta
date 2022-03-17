@@ -63,6 +63,7 @@ namespace Sistema_de_Ventas
                 articulo.garantia = txtGarantia.Text.Trim();
                 articulo.fechaEntrada = fechaentrada.Text.Trim();
                 articulo.fechaVencimiento = fechavencimiento.Text.Trim();
+                articulo.Cantidad = int.Parse(txtCantidad.Text.Trim());
 
                 funcion.insertarArticulos(articulo);
             }

@@ -17,7 +17,7 @@ namespace Sistema_de_Ventas
             {
                 Conexion.ObtenerConeccion();
                 SqlCommand cmd = new SqlCommand();
-                string query = @"INSERT INTO tblarticulo(codigo, nombre, categoria, preciocompra, garantia, fechaentrada, fechavencimiento) values(@codigo, @nombre, @categoria, @preciocompra, @garantia, @fechaentrada, @fechavencimiento)";
+                string query = @"INSERT INTO tblarticulo(codigo, nombre, categoria, preciocompra, garantia, fechaentrada, fechavencimiento, stock) values(@codigo, @nombre, @categoria, @preciocompra, @garantia, @fechaentrada, @fechavencimiento, @stock)";
                 cmd.Parameters.Add(new SqlParameter("@codigo",articulo.codigo));
                 cmd.Parameters.Add(new SqlParameter("@nombre", articulo.nombre));
                 cmd.Parameters.Add(new SqlParameter("@categoria", articulo.categoria));
@@ -25,6 +25,7 @@ namespace Sistema_de_Ventas
                 cmd.Parameters.Add(new SqlParameter("@garantia", articulo.garantia));
                 cmd.Parameters.Add(new SqlParameter("@fechaentrada", articulo.fechaEntrada));
                 cmd.Parameters.Add(new SqlParameter("@fechavencimiento", articulo.fechaVencimiento));
+                cmd.Parameters.Add(new SqlParameter("@stock", articulo.Cantidad));
                 cmd.Connection = Conexion.ObtenerConeccion();
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = query;

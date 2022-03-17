@@ -16,5 +16,16 @@ namespace Sistema_de_Ventas
         {
             InitializeComponent();
         }
+
+        private void pbSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pbArticulos_Click(object sender, EventArgs e)
+        {
+            formarticulos frm = new formarticulos();
+            frm.Show();
+        }
     }
 }

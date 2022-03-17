@@ -14,3 +14,4 @@ C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Siste
 C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema_de_Ventas.FormCrearArticulo.resources
 C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema_de_Ventas.frmcategoria.resources
 C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema_de_Ventas.MenuPrincipal.resources
+C:\Users\Esmarlyn\Desktop\c#\Sistema de Ventas\Sistema de Ventas\obj\Debug\Sistema_de_Ventas.Mantenimiento.resources

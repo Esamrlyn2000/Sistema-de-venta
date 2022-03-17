@@ -24,6 +24,8 @@ namespace Sistema_de_Ventas
 
         public string fechaVencimiento { get; set; }
 
+        public int Cantidad { get; set; }   
+
 
 
 

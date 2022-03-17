@@ -110,6 +110,9 @@
     <EmbeddedResource Include="Frmloging.resx">
       <DependentUpon>Frmloging.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento.resx">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +159,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Iconos\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\maintenance_40px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

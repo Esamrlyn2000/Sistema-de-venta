@@ -52,7 +52,7 @@ namespace Sistema_de_Ventas
 
         private void pbMantenimiento_Click(object sender, EventArgs e)
         {
-            formarticulos frm = new formarticulos();
+            Mantenimiento frm = new Mantenimiento();
 
             frm.Show();
         }
