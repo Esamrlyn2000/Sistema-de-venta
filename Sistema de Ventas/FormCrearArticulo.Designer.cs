@@ -44,6 +44,7 @@
             this.fechavencimiento = new System.Windows.Forms.DateTimePicker();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.Btnagreagar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtCodigo
@@ -188,18 +189,32 @@
             // 
             // Btnagreagar
             // 
-            this.Btnagreagar.Location = new System.Drawing.Point(168, 361);
+            this.Btnagreagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btnagreagar.Location = new System.Drawing.Point(277, 364);
             this.Btnagreagar.Name = "Btnagreagar";
-            this.Btnagreagar.Size = new System.Drawing.Size(75, 23);
+            this.Btnagreagar.Size = new System.Drawing.Size(106, 38);
             this.Btnagreagar.TabIndex = 5;
             this.Btnagreagar.Text = "Agregar";
             this.Btnagreagar.UseVisualStyleBackColor = true;
+            this.Btnagreagar.Click += new System.EventHandler(this.Btnagreagar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(32, 364);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(105, 38);
+            this.btnCancelar.TabIndex = 6;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // FormCrearArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 426);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.Btnagreagar);
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.fechavencimiento);
@@ -242,5 +257,6 @@
         private System.Windows.Forms.DateTimePicker fechavencimiento;
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button Btnagreagar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

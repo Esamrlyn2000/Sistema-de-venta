@@ -16,13 +16,17 @@ namespace Sistema_de_Ventas
         {
             InitializeComponent();
         }
-
+        Funciones funciones = new Funciones();
         private void Btnguardar_Click(object sender, EventArgs e)
         {
-           Categorias categorias = new Categorias();
-            categorias.codigo = txtCodigo.Text;
-            categorias.descricion = txtDescripcion.Text;
+           
+            funciones.insertar(txtCodigo.Text.Trim(),txtDescripcion.Text.Trim());
 
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

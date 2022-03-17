@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_de_Ventas
 {
-    internal class Articulos
+    public class Articulos
     {
         public string codigo { get; set; }
 
@@ -22,7 +22,7 @@ namespace Sistema_de_Ventas
 
         public string fechaEntrada { get; set; }
 
-        public string fechaSalida { get; set; }
+        public string fechaVencimiento { get; set; }
 
 
 

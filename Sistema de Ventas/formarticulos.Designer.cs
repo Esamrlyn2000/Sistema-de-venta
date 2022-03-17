@@ -30,16 +30,18 @@
         {
             this.lblBuscar = new System.Windows.Forms.Label();
             this.txtBucar = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Dgvarticulos = new System.Windows.Forms.DataGridView();
             this.btnCrearArticulo = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.Btncerrar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgvarticulos)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
             this.lblBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuscar.Location = new System.Drawing.Point(42, 60);
+            this.lblBuscar.Location = new System.Drawing.Point(42, 57);
             this.lblBuscar.Name = "lblBuscar";
             this.lblBuscar.Size = new System.Drawing.Size(68, 24);
             this.lblBuscar.TabIndex = 0;
@@ -48,18 +50,23 @@
             // txtBucar
             // 
             this.txtBucar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBucar.Location = new System.Drawing.Point(116, 60);
+            this.txtBucar.Location = new System.Drawing.Point(131, 57);
             this.txtBucar.Name = "txtBucar";
             this.txtBucar.Size = new System.Drawing.Size(384, 29);
             this.txtBucar.TabIndex = 1;
+            this.txtBucar.TextChanged += new System.EventHandler(this.txtBucar_TextChanged);
             // 
-            // dataGridView1
+            // Dgvarticulos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 120);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(709, 260);
-            this.dataGridView1.TabIndex = 2;
+            this.Dgvarticulos.AllowUserToAddRows = false;
+            this.Dgvarticulos.AllowUserToDeleteRows = false;
+            this.Dgvarticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgvarticulos.Location = new System.Drawing.Point(46, 120);
+            this.Dgvarticulos.Name = "Dgvarticulos";
+            this.Dgvarticulos.ReadOnly = true;
+            this.Dgvarticulos.Size = new System.Drawing.Size(709, 260);
+            this.Dgvarticulos.TabIndex = 2;
+            this.Dgvarticulos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgvarticulos_CellClick);
             // 
             // btnCrearArticulo
             // 
@@ -70,19 +77,49 @@
             this.btnCrearArticulo.TabIndex = 3;
             this.btnCrearArticulo.Text = "Agregar";
             this.btnCrearArticulo.UseVisualStyleBackColor = true;
+            this.btnCrearArticulo.Click += new System.EventHandler(this.btnCrearArticulo_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(521, 54);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(114, 37);
+            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // Btncerrar
+            // 
+            this.Btncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btncerrar.Location = new System.Drawing.Point(753, 1);
+            this.Btncerrar.Name = "Btncerrar";
+            this.Btncerrar.Size = new System.Drawing.Size(44, 41);
+            this.Btncerrar.TabIndex = 3;
+            this.Btncerrar.Text = "X";
+            this.Btncerrar.UseVisualStyleBackColor = true;
+            this.Btncerrar.Click += new System.EventHandler(this.Btncerrar_Click);
             // 
             // formarticulos
             // 
+            this.AcceptButton = this.btnBuscar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.Btncerrar);
             this.Controls.Add(this.btnCrearArticulo);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Dgvarticulos);
             this.Controls.Add(this.txtBucar);
             this.Controls.Add(this.lblBuscar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formarticulos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formarticulos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formarticulos_FormClosing);
+            this.Load += new System.EventHandler(this.formarticulos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Dgvarticulos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,7 +129,9 @@
 
         private System.Windows.Forms.Label lblBuscar;
         private System.Windows.Forms.TextBox txtBucar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Dgvarticulos;
         private System.Windows.Forms.Button btnCrearArticulo;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button Btncerrar;
     }
 }

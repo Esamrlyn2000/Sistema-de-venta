@@ -23,7 +23,8 @@ namespace Sistema_de_Ventas
         {
             Datoslogin dl = new Datoslogin();
 
-            FormCrearArticulo frm = new FormCrearArticulo();
+            formarticulos frm = new formarticulos();
+            
             SqlCommand cmd = new SqlCommand();
             SqlDataReader lector;
             string query = "select * from tblusuarios where nombre = @usuario";
@@ -54,6 +55,10 @@ namespace Sistema_de_Ventas
                             frm.Show();
                             this.Hide();
                             
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuario o Contraseña incorrecta","Notificacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         
                     }

@@ -38,40 +38,48 @@
             // LblPass
             // 
             this.LblPass.AutoSize = true;
-            this.LblPass.Location = new System.Drawing.Point(180, 114);
+            this.LblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPass.Location = new System.Drawing.Point(71, 98);
             this.LblPass.Name = "LblPass";
-            this.LblPass.Size = new System.Drawing.Size(61, 13);
+            this.LblPass.Size = new System.Drawing.Size(106, 24);
             this.LblPass.TabIndex = 0;
             this.LblPass.Text = "Contraseña";
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(156, 153);
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(12, 140);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(100, 20);
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(243, 29);
             this.txtPass.TabIndex = 1;
+            this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LblUsuario
             // 
             this.LblUsuario.AutoSize = true;
-            this.LblUsuario.Location = new System.Drawing.Point(188, 23);
+            this.LblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUsuario.Location = new System.Drawing.Point(88, 19);
             this.LblUsuario.Name = "LblUsuario";
-            this.LblUsuario.Size = new System.Drawing.Size(43, 13);
+            this.LblUsuario.Size = new System.Drawing.Size(74, 24);
             this.LblUsuario.TabIndex = 0;
             this.LblUsuario.Text = "Usuario";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(156, 62);
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(12, 56);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(243, 29);
             this.txtUsuario.TabIndex = 1;
+            this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnAcceder
             // 
-            this.btnAcceder.Location = new System.Drawing.Point(166, 203);
+            this.btnAcceder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcceder.Location = new System.Drawing.Point(75, 188);
             this.btnAcceder.Name = "btnAcceder";
-            this.btnAcceder.Size = new System.Drawing.Size(75, 23);
+            this.btnAcceder.Size = new System.Drawing.Size(109, 41);
             this.btnAcceder.TabIndex = 2;
             this.btnAcceder.Text = "Ingresar";
             this.btnAcceder.UseVisualStyleBackColor = true;
@@ -79,9 +87,10 @@
             // 
             // Frmloging
             // 
+            this.AcceptButton = this.btnAcceder;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 371);
+            this.ClientSize = new System.Drawing.Size(267, 241);
             this.Controls.Add(this.btnAcceder);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.txtPass);
